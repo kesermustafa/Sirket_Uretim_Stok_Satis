@@ -7,15 +7,16 @@ public class FabrikaBiskivi {
     public static double biskivuGelir;
 
 
-    public void uretim( int uretilen){
+    public int uretim( int uretilen){
         DepoStok.biskuviStokAdet+=uretilen;
+        return DepoStok.biskuviStokAdet;
     }
 
 
-    public void satis(int satis){
+    public int satis(int satis){
         DepoStok.biskuviStokAdet-=satis;
         biskivuGelir = biskivuGelir + (bikuvi*satis);
-
+        return DepoStok.biskuviStokAdet;
     }
 
 

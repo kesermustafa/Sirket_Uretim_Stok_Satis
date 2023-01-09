@@ -5,16 +5,19 @@ public class Muhasebe {
     public static double toplamGelir;
 
 
-    public void maasOde(double maas){
+    public double maasOde(double maas){
         toplamGelir -= maas;
+        return toplamGelir;
     }
 
-    public void krediAl(double kredi){
+    public double krediAl(double kredi){
         toplamGelir+=kredi;
+        return toplamGelir;
     }
 
-    public void borcOde(double borc){
+    public double borcOde(double borc){
         toplamGelir -=borc;
+        return toplamGelir;
     }
 
 

@@ -6,13 +6,16 @@ public class FabrikaCikolata {
 
     public static double cikolataGelir;
 
-    public void uretim( int uretilen){
+    public int uretim( int uretilen){
         DepoStok.cikolataStokAdet+=uretilen;
+        return DepoStok.cikolataStokAdet;
     }
 
-    public void satis(int satis){
+    public int satis(int satis){
         DepoStok.cikolataStokAdet-=satis;
         cikolataGelir += (cikolata*satis);
+
+        return DepoStok.cikolataStokAdet;
 
     }
 

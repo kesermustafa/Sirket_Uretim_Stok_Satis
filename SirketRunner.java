@@ -12,8 +12,8 @@ public class SirketRunner {
 
         FabrikaCikolata satis = new FabrikaCikolata();
         satis.satis(1000);
-
-
+        satis.satis(500);
+        satis.satis(5000);
 
 
 
@@ -22,9 +22,11 @@ public class SirketRunner {
         biskuvi.uretim(7800);
         biskuvi.uretim(7930);
         biskuvi.uretim(9300);
+        biskuvi.uretim(25000);
 
 
         biskuvi.satis(2000);
+        biskuvi.satis(20000);
 
 
 
